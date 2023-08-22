@@ -21,8 +21,8 @@ class MetaServiceProvider extends ServiceProvider
             $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
 
             $this->publishes([
-                __DIR__.'/../Config/briofy-tag.php' => config_path('briofy-tag.php'),
-            ], 'briofy-tag-config');
+                __DIR__.'/../Config/briofy-tag.php' => config_path('briofy-meta.php'),
+            ], 'briofy-meta-config');
         }
 
         $this->app->bind(IMetaRepository::class, MetaRepository::class);
