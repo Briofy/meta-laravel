@@ -1,0 +1,194 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "74f1f3d088f10257928fe5e25e84c955",
+    "packages": [
+        {
+            "name": "briofy/repository-laravel",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Briofy/repository-laravel.git",
+                "reference": "298d648dca3f6d4851042debea3537e8df9a3c5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Briofy/repository-laravel/zipball/298d648dca3f6d4851042debea3537e8df9a3c5b",
+                "reference": "298d648dca3f6d4851042debea3537e8df9a3c5b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Briofy\\RepositoryLaravel\\Providers\\RepositoryServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Briofy\\RepositoryLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mam Mad",
+                    "email": "mmd@briofy.net"
+                },
+                {
+                    "name": "Hosein Danamehr",
+                    "email": "h.danamehr@briofy.net"
+                }
+            ],
+            "description": "The Repository Design Pattern Package for Laravel",
+            "support": {
+                "issues": "https://github.com/Briofy/repository-laravel/issues",
+                "source": "https://github.com/Briofy/repository-laravel/tree/main"
+            },
+            "time": "2023-06-10T07:38:43+00:00"
+        },
+        {
+            "name": "briofy/rest-laravel",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Briofy/rest-laravel.git",
+                "reference": "8eac3eec5d5cb3884b3ee842ead70ea1ddec3caa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Briofy/rest-laravel/zipball/8eac3eec5d5cb3884b3ee842ead70ea1ddec3caa",
+                "reference": "8eac3eec5d5cb3884b3ee842ead70ea1ddec3caa",
+                "shasum": ""
+            },
+            "require-dev": {
+                "laravel/pint": "^1.9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Briofy\\RestLaravel\\Providers\\BriofyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Briofy\\RestLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mam Mad",
+                    "email": "mmd@briofy.net"
+                }
+            ],
+            "description": "The Restfull API Responds Package for Laravel",
+            "support": {
+                "issues": "https://github.com/Briofy/rest-laravel/issues",
+                "source": "https://github.com/Briofy/rest-laravel/tree/main"
+            },
+            "time": "2023-04-29T20:33:33+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "laravel/pint",
+            "version": "v1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/pint.git",
+                "reference": "88e835bf922b94017778bde89ef8f215e1ea40db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/88e835bf922b94017778bde89ef8f215e1ea40db",
+                "reference": "88e835bf922b94017778bde89ef8f215e1ea40db",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-tokenizer": "*",
+                "ext-xml": "*",
+                "php": "^8.1.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.21.1",
+                "illuminate/view": "^10.5.1",
+                "laravel-zero/framework": "^10.1.1",
+                "mockery/mockery": "^1.5.1",
+                "nunomaduro/larastan": "^2.5.1",
+                "nunomaduro/termwind": "^1.15.1",
+                "pestphp/pest": "^2.4.0"
+            },
+            "bin": [
+                "builds/pint"
+            ],
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "App\\": "app/",
+                    "Database\\Seeders\\": "database/seeders/",
+                    "Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "An opinionated code formatter for PHP.",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "format",
+                "formatter",
+                "lint",
+                "linter",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/pint/issues",
+                "source": "https://github.com/laravel/pint"
+            },
+            "time": "2023-08-15T15:30:00+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "briofy/repository-laravel": 20,
+        "briofy/rest-laravel": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "^8.1"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

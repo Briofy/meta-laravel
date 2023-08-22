@@ -1,0 +1,32 @@
+{
+  "name": "briofy/meta-laravel",
+  "description": "The official repository of Meta (key:value) module from Briofy for Laravel",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Muhammad",
+      "email": "hi@trader4.net"
+    }
+  ],
+  "require": {
+    "php": "^8.1",
+    "briofy/repository-laravel": "dev-main",
+    "briofy/rest-laravel": "dev-main"
+  },
+  "require-dev": {
+    "laravel/pint": "^1.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Briofy\\Meta\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Briofy\\Meta\\Providers\\MetaServiceProvider"
+      ]
+    }
+  }
+}
