@@ -15,6 +15,8 @@ class Meta extends Model
 
     private $uuids = false;
 
+    protected $table = 'meta';
+
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);

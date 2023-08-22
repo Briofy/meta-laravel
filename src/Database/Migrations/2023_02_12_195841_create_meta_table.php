@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::connection(config('briofy-meta.database.connection'))
-            ->create('tags', function (Blueprint $table) {
+            ->create('meta', function (Blueprint $table) {
                 config('briofy-meta.database.uuid') ? $table->uuid('id')->primary() : $table->id();
                 $table->string('model_id')->index()->nullable();
                 $table->string('model_type')->index()->nullable();
