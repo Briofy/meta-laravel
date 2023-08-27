@@ -36,20 +36,12 @@ class Meta extends Model
         return MetaFactory::new();
     }
 
-    protected function initializeTraits()
+    public static function boot()
     {
-        parent::initializeTraits();
-        if($this->uuids){
-            $this->bootHasUuids();
-        }
-    }
+        parent::boot();
 
-    protected static function bootHasUuids()
-    {
-        static::creating(function ($model) {
-            if (!$model->getKey()) {
-                $model->{$model->getKeyName()} = (string) Str::orderedUuid();
-            }
+        static::creating(function ($meta) {
+            if($this->uuids) $meta->uuid = (string) Str::orderedUuid();
         });
     }
 
