@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
 
 class Meta extends Model
@@ -41,7 +42,7 @@ class Meta extends Model
         parent::boot();
 
         static::creating(function ($meta) {
-            if($this->uuids) $meta->uuid = (string) Str::orderedUuid();
+            if(Schema::getColumnType('meta', 'id')==='string') $meta->id = (string) Str::orderedUuid();
         });
     }
 
