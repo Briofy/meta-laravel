@@ -24,7 +24,7 @@ class Meta extends Model
         $this->setConnection(config('briofy-meta.database.connection'));
         $this->uuids = config('briofy-meta.database.uuid', false);
         if($this->uuids){
-            $this->primaryKey = 'uuid';
+            $this->primaryKey = 'id';
             $this->keyType = 'string';
             $this->incrementing = false;
         }
